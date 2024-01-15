@@ -5,10 +5,9 @@ using UnityEngine;
 public class InfoPlayer : MonoBehaviour
 {
     public TextMeshProUGUI textInfo;
-    public GameObject player;
 
     void Update()
     {
-        textInfo.SetText($"Score : {Player.scoreValue}\n test");
+        textInfo.SetText($"Score : {Player.scoreValue}\nSpeed : {Mathf.Round(Player.speedValue)} km/h\n ");
     }
 }
