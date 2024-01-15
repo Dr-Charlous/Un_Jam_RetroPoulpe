@@ -8,6 +8,6 @@ public class InfoPlayer : MonoBehaviour
 
     void Update()
     {
-        textInfo.SetText($"Score : {Player.scoreValue}\n Speed : {Mathf.Round(Player.speedValue)} km/h\n ");
+        textInfo.SetText($"Score : {Player.scoreValue}\nSpeed : {Mathf.Round(Player.speedValue)} km/h\n ");
     }
 }
