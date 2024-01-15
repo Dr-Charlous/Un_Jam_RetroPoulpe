@@ -5,13 +5,111 @@ using UnityEngine.U2D;
 
 public class TerrainGenerator : MonoBehaviour
 {
-    [SerializeField] float value = 0;
-    [SerializeField] GameObject Ball;
+    Mesh mesh;
+
+    Vector3[] vertices;
+    int[] triangles;
+
+    int PreviousXSize;
+    int PreviousZSize;
+    float PreviousMaxHeight;
+
+    [Range(10, 30)]
+    public int xSize;
+    [Range(1, 2)]
+    public int zSize;
+    [Range(0f, 2f)]
+    public float MaxHeight;
+
+    //private void Start()
+    //{
+    //    mesh = new Mesh();
+    //    GetComponent<MeshFilter>().mesh = mesh;
+
+    //    CreateShape();
+    //    UpdateMesh();
+
+    //    GetComponent<MeshCollider>().sharedMesh = mesh;
+    //}
 
     private void Update()
     {
-        value += Time.deltaTime;
-        Debug.Log(Mathf.Sin(value));
-        Ball.transform.position = new Vector3(transform.position.x, Mathf.Sin(value), transform.position.z);
+        if (xSize != PreviousXSize || zSize != PreviousZSize || MaxHeight != PreviousMaxHeight)
+        {
+            mesh = new Mesh();
+            GetComponent<MeshFilter>().mesh = mesh;
+
+            CreateShape();
+            UpdateMesh();
+
+            GetComponent<MeshCollider>().sharedMesh = mesh;
+
+            PreviousXSize = xSize;
+            PreviousZSize = zSize;
+            PreviousMaxHeight = MaxHeight;
+        }
+    }
+
+    void CreateShape()
+    {
+        vertices = new Vector3[(xSize + 1) * (zSize + 1)];
+
+        int i = 0;
+
+        for (int z = 0; z <= zSize; z++)
+        {
+            for (int x = 0; x <= xSize; x++)
+            {
+                //hauteur
+                //float y = Mathf.PerlinNoise(x * 0.3f,z * 0.3f) * MaxHeight;
+                float y = Mathf.Sin(x) * MaxHeight;
+
+                vertices[i] = new Vector3(x - (xSize / 2), y, z - (zSize / 2));
+                i++;
+            }
+        }
+
+        triangles = new int[xSize * zSize * 6];
+
+        int vert = 0;
+        int tris = 0;
+
+        for (int z = 0; z < zSize; z++)
+        {
+            for (int x = 0; x < xSize; x++)
+            {
+                triangles[tris + 0] = vert + 0;
+                triangles[tris + 1] = vert + xSize + 1;
+                triangles[tris + 2] = vert + 1;
+                triangles[tris + 3] = vert + 1;
+                triangles[tris + 4] = vert + xSize + 1;
+                triangles[tris + 5] = vert + xSize + 2;
+
+                vert++;
+                tris += 6;
+            }
+            vert++;
+        }
+    }
+
+    void UpdateMesh()
+    {
+        mesh.Clear();
+
+        mesh.vertices = vertices;
+        mesh.triangles = triangles;
+
+        mesh.RecalculateNormals();
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (vertices == null)
+            return;
+
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            Gizmos.DrawSphere(vertices[i], 0.1f);
+        }
     }
 }
