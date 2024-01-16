@@ -8,8 +8,11 @@ public class Player : MonoBehaviour
     public  static float speedValue = 0;
     public static float time = 0;
 
-    public Image healthBar;
-    public static float health = 100f;
+    public Image hungryBarFull;
+    public static float hungry = 100f;
+
+    public Image lubricantBarFull;
+    public static float lubricant = 100f;
 
     private int lastTime = 0;
     private int currentTime = 0;
@@ -17,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CalcSpeed());
+        StartCoroutine(CalculateSpeed());
     }
 
     void Update()
@@ -25,15 +28,18 @@ public class Player : MonoBehaviour
         time += Time.deltaTime;
         currentTime = Mathf.FloorToInt(time);
 
-        if (lastTime != currentTime) // A chaque seconde
+        if (lastTime != currentTime) // Every second
         {
             scoreValue += 10;
-            TakeDamage(10);
+            MoreHungry(10);
+            LessLubricant(20);
         }
         lastTime = currentTime;
     }
 
-    IEnumerator CalcSpeed()
+    // Speed
+
+    IEnumerator CalculateSpeed()
     {
         while (true)
         {
@@ -45,17 +51,35 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    // Hungry
+
+    public void MoreHungry(float notEating)
     {
-        health -= damage;
-        healthBar.fillAmount = health/100;
+        hungry -= notEating;
+        hungryBarFull.fillAmount = hungry / 100;
     }
 
-    public void Heal(float healing)
+    public void LessHungry(float eating)
     {
-        health += healing;
-        healthBar.fillAmount = Mathf.Clamp(healing, 0, 100);
+        hungry += eating;
+        hungryBarFull.fillAmount = Mathf.Clamp(eating, 0, 100);
 
-        healthBar.fillAmount = health/100;
+        hungryBarFull.fillAmount = hungry / 100;
+    }
+
+    // Lubricant
+
+    public void MoreLubricant(float wet)
+    {
+        lubricant += wet;
+        lubricantBarFull.fillAmount = lubricant / 100;
+    }
+
+    public void LessLubricant(float dry)
+    {
+        lubricant -= dry;
+        lubricantBarFull.fillAmount = Mathf.Clamp(dry, 0, 100);
+
+        lubricantBarFull.fillAmount = lubricant / 100;
     }
 }
