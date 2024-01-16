@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7392899280625961798}
   - component: {fileID: 3742784084194731347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,7 +103,7 @@ GameObject:
   - component: {fileID: 8516783085957039941}
   - component: {fileID: 3418233840120236618}
   - component: {fileID: 181326920554966840}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +283,7 @@ GameObject:
   - component: {fileID: 8766751074841825244}
   - component: {fileID: 5673594336447266367}
   - component: {fileID: 4094402765484949208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +333,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 634d50b856083674cac384511047cf65, type: 2}
+  - {fileID: 2100000, guid: ed716ba7765e0af4ab3231a5b0101748, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -495,7 +497,7 @@ GameObject:
   - component: {fileID: 2062448125200586557}
   - component: {fileID: 2514996766659305317}
   - component: {fileID: 1772416397785955346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4158274621461422296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -709,7 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2945741283425626119}
   - component: {fileID: 1129452409233207732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +772,7 @@ GameObject:
   - component: {fileID: 3903971847652493117}
   - component: {fileID: 7981691275138257859}
   - component: {fileID: 4285033283183605811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +951,7 @@ GameObject:
   - component: {fileID: 3335274469402582009}
   - component: {fileID: 5933330866344736575}
   - component: {fileID: 1230445536507408008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1125,7 +1127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8567298970794195540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,7 +1164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4423267831895989629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1177,7 +1179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768415678437305109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0009999871, y: 0, z: -0.023000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1203,7 +1205,7 @@ GameObject:
   - component: {fileID: 8058593091421432802}
   - component: {fileID: 8144599684575056032}
   - component: {fileID: 5667292559299149811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6767465719816233151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1419,7 +1421,7 @@ GameObject:
   - component: {fileID: 8583090508789023392}
   - component: {fileID: 4596460086649035011}
   - component: {fileID: 6519698605327298834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1598,7 +1600,7 @@ GameObject:
   - component: {fileID: 4653475308899567950}
   - component: {fileID: 2192541063437617712}
   - component: {fileID: 9083469216961401877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1196661105129099666}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,7 +1814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8241198064258562691}
   - component: {fileID: 4600663795673644436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1856,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1905,7 +1908,7 @@ GameObject:
   - component: {fileID: 6089016744182134027}
   - component: {fileID: 8659491979961379159}
   - component: {fileID: 5635835047673520051}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2107,7 +2110,7 @@ GameObject:
   - component: {fileID: 2339855100783613690}
   - component: {fileID: 563860416008885014}
   - component: {fileID: 6720508139223661979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2289,7 @@ GameObject:
   - component: {fileID: 4989447038936886061}
   - component: {fileID: 709555850098383007}
   - component: {fileID: 6488225372778320653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7847221794565651288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rigs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2498,7 +2501,7 @@ GameObject:
   - component: {fileID: 50965260808010392}
   - component: {fileID: 133476649729699792}
   - component: {fileID: 4159116986036888725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2674,7 +2677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8270701823459844668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2717,7 @@ GameObject:
   - component: {fileID: 761105969990876709}
   - component: {fileID: 3190132990201277865}
   - component: {fileID: 5891832280064823702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2893,7 +2896,7 @@ GameObject:
   - component: {fileID: 4862842371779180378}
   - component: {fileID: 4667422690297731353}
   - component: {fileID: 2426063067083805406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3072,7 +3075,7 @@ GameObject:
   - component: {fileID: 8452788001165069720}
   - component: {fileID: 7508340257832179033}
   - component: {fileID: 6927301286980503340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3251,7 +3254,7 @@ GameObject:
   - component: {fileID: 1905890174204932414}
   - component: {fileID: 5389894450861949105}
   - component: {fileID: 1556724815396896173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3430,7 +3433,7 @@ GameObject:
   - component: {fileID: 7921609855901658777}
   - component: {fileID: 1514684063482982282}
   - component: {fileID: 6822747684735202282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3609,7 +3612,7 @@ GameObject:
   - component: {fileID: 5767124923249546692}
   - component: {fileID: 183596448065573682}
   - component: {fileID: 1062220732116520956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3788,7 +3791,7 @@ GameObject:
   - component: {fileID: 4880054032752274282}
   - component: {fileID: 8008379394681860195}
   - component: {fileID: 1780274961937951903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3967,7 +3970,7 @@ GameObject:
   - component: {fileID: 6075654711007285739}
   - component: {fileID: 5507742831320466858}
   - component: {fileID: 6198581965547379882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4146,7 +4149,7 @@ GameObject:
   - component: {fileID: 1563259289205025118}
   - component: {fileID: 1832108994171555488}
   - component: {fileID: 6923580117327618898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4322,7 +4325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247491510940412228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4355,7 +4358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7931467205516565068}
   - component: {fileID: 4519736682234693683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4416,7 +4419,7 @@ GameObject:
   - component: {fileID: 7989678573477462110}
   - component: {fileID: 6954915835806845320}
   - component: {fileID: 8210685473298759599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4595,7 +4598,7 @@ GameObject:
   - component: {fileID: 3895047800588688409}
   - component: {fileID: 1096337548784589623}
   - component: {fileID: 4646953292290168517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4773,7 +4776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7816958684809871449}
   - component: {fileID: 4396219351354448786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4815,7 +4818,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4865,7 +4869,7 @@ GameObject:
   - component: {fileID: 3256450404807854234}
   - component: {fileID: 4348654876042064693}
   - component: {fileID: 304039222819511108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5044,7 +5048,7 @@ GameObject:
   - component: {fileID: 7284281443679963925}
   - component: {fileID: 7556381613281216803}
   - component: {fileID: 3895790754963045325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5221,7 +5225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5371891197902310257}
   - component: {fileID: 3843486184425789725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5279,7 +5283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8261219144256639392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5313,7 +5317,7 @@ GameObject:
   - component: {fileID: 8283629165738356109}
   - component: {fileID: 9073220488150649236}
   - component: {fileID: 2952146542485066117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5489,7 +5493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7013004646981845354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5521,7 +5525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8447500950033572748}
   - component: {fileID: 2065227035870864464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5579,7 +5583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5385967094264594176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5613,7 +5617,7 @@ GameObject:
   - component: {fileID: 4741567101609661340}
   - component: {fileID: 3581730242586270287}
   - component: {fileID: 5507385516134232324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5792,7 +5796,7 @@ GameObject:
   - component: {fileID: 9005588016969956568}
   - component: {fileID: 4973521308037533400}
   - component: {fileID: 6980690760203361097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5968,7 +5972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 158923435059201914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5999,7 +6003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3476330263191274608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6032,7 +6036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9196304116819634716}
   - component: {fileID: 6680211585697239131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6074,7 +6078,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6121,7 +6126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3704205153050535382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6158,7 +6163,7 @@ GameObject:
   - component: {fileID: 1449746450346679514}
   - component: {fileID: 6338045015194767166}
   - component: {fileID: 6381552546489432639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6335,7 +6340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4988816733695654311}
   - component: {fileID: 3943828107545002208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6396,7 +6401,7 @@ GameObject:
   - component: {fileID: 6740519578289526280}
   - component: {fileID: 6959995707791088981}
   - component: {fileID: 8668273450235914361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6572,7 +6577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5560082660193646111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6604,7 +6609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3251995850764823247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6637,7 +6642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705529751614136708}
   - component: {fileID: 4009204740824167466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeadRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6698,7 +6703,7 @@ GameObject:
   - component: {fileID: 2358701893512615514}
   - component: {fileID: 3843290946610907689}
   - component: {fileID: 8275905962570329863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6875,7 +6880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7393548066682492947}
   - component: {fileID: 5327670852102885243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6917,7 +6922,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6969,7 +6975,7 @@ GameObject:
   - component: {fileID: 4733733363321600938}
   - component: {fileID: 315980197444484056}
   - component: {fileID: 2354672129357952170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7168,7 +7174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8182714646177191908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7183,7 +7189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6461183896255069495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.001, y: 0, z: -0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7209,7 +7215,7 @@ GameObject:
   - component: {fileID: 7290270458537355241}
   - component: {fileID: 7392220554427513448}
   - component: {fileID: 8258124899019136176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7411,7 +7417,7 @@ GameObject:
   - component: {fileID: 7594463601040591958}
   - component: {fileID: 963920640322977683}
   - component: {fileID: 1351251050838247968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.004_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7587,7 +7593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7192111697650389529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7627,7 +7633,7 @@ GameObject:
   - component: {fileID: 4103881929075484673}
   - component: {fileID: 1029162284848530737}
   - component: {fileID: 8301094140141097483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7807,7 +7813,7 @@ GameObject:
   - component: {fileID: 5624012295695358661}
   - component: {fileID: 1708512068094244395}
   - component: {fileID: 2525203864558331406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8009,7 +8015,7 @@ GameObject:
   - component: {fileID: 507300697917022239}
   - component: {fileID: 3036703132813248859}
   - component: {fileID: 7185313905085620241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8186,7 +8192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3374117533377935411}
   - component: {fileID: 3649060130892142510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8244,7 +8250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6082419905800536195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8280,7 +8286,7 @@ GameObject:
   - component: {fileID: 4213879498668497608}
   - component: {fileID: 7833092176889643414}
   - component: {fileID: 5737278234951269421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8479,7 +8485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6160537066571344192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8518,7 +8524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5686264823934956871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8549,7 +8555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3364206061245030421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8581,7 +8587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4830208469361070964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8612,7 +8618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7096221938568176257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8652,7 +8658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7325903630517771566}
   - component: {fileID: 2049771599067392378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8694,7 +8700,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8742,7 +8749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196865228636628933}
   - component: {fileID: 1512082971862910282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8800,7 +8807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166824945320469090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8840,7 +8847,7 @@ GameObject:
   - component: {fileID: 1405324425280925002}
   - component: {fileID: 653927315179489945}
   - component: {fileID: 954188943934650548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9016,7 +9023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8758386083450543875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9050,7 +9057,7 @@ GameObject:
   - component: {fileID: 1250367687872158688}
   - component: {fileID: 3078681401122968121}
   - component: {fileID: 3845140400125249136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9229,7 +9236,7 @@ GameObject:
   - component: {fileID: 7280868884302240295}
   - component: {fileID: 2470862659008581658}
   - component: {fileID: 1798347376245485130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9405,7 +9412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9069622947467612049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9440,7 +9447,7 @@ GameObject:
   - component: {fileID: 2606864855037534430}
   - component: {fileID: 3327231303902736337}
   - component: {fileID: 771369467459991572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9621,7 +9628,7 @@ GameObject:
   - component: {fileID: 6879083698519353561}
   - component: {fileID: 3795138401007618576}
   - component: {fileID: 5571779213250972575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9821,7 +9828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6196416337132240475}
   - component: {fileID: 1725278160289542404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tentacle_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9863,7 +9870,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
+  - {fileID: 2100000, guid: 37d53e273f3448643a84d5919f1f66a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9913,7 +9921,7 @@ GameObject:
   - component: {fileID: 3535582741395441814}
   - component: {fileID: 2510020157761652129}
   - component: {fileID: 9114342471752715390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10089,7 +10097,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7146383881988045171}
-  m_Layer: 0
+  - component: {fileID: 8701183182617668916}
+  m_Layer: 6
   m_Name: Poulpe_Ragdoll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10112,5 +10121,18 @@ Transform:
   - {fileID: 3704205153050535382}
   - {fileID: 6160537066571344192}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8701183182617668916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002137084250432246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b6ade037efa31418514199c4f0d3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoulpeMaterial: {fileID: 2100000, guid: 28566ef6662184e49a06ea3d2df4d679, type: 2}
