@@ -22,8 +22,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        //manager.name.Clear();
-        //manager.score.Clear();
         StartCoroutine(CalculateSpeed());
     }
 
@@ -35,8 +33,8 @@ public class Player : MonoBehaviour
         if (lastTime != currentTime) // Every second
         {
             scoreValue += 10;
-            MoreHungry(10);
-            LessLubricant(20);
+            MoreHungry(1);
+            LessLubricant(5);
         }
         lastTime = currentTime;
 

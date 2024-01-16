@@ -12,10 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7d4768a06b6cf478ae01a972a0015b, type: 3}
   m_Name: Manager
   m_EditorClassIdentifier: 
-  name:
-  - test
-  - mope
-  - hat
-  - yhi
-  - po
-  score: 550000001df7c2ff220000008700000041000000
+  name: []
+  score: 
