@@ -6056,6 +6056,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 709555850098383007, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 709555850098383007, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 963920640322977683, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 963920640322977683, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096337548784589623, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096337548784589623, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327231303902736337, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327231303902736337, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581730242586270287, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581730242586270287, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009204740824167466, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667422690297731353, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667422690297731353, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959995707791088981, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959995707791088981, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 7146383881988045171, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
         type: 3}
       propertyPath: m_RootOrder
@@ -6111,13 +6186,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981691275138257859, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularXDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981691275138257859, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
+        type: 3}
+      propertyPath: m_AngularYZDrive.positionSpring
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 9002137084250432246, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8,
         type: 3}
       propertyPath: m_Name
       value: Poulpe_Ragdoll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5246006577758084850, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b3ee12a8c01bdc43a723c9da7ea90f8, type: 3}
