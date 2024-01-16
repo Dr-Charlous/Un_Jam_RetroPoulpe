@@ -30,22 +30,26 @@ public class ScoreBoard : MonoBehaviour
         for (int i = 0; i < numberScoreName; i++)
         {
             FindMax(scoreDisplay);
-            if (max != -1)
+            if (max >= 0)
             {
                 text.text += $"{nameDisplay[index]} - ";
-                for (int j = 0;  j < 8-max.ToString().Length; j++)
+                for (int j = 0; j < 8 - max.ToString().Length; j++)
                 {
                     text.text += "0";
                 }
                 text.text += $"{max}\n";
+
+                scoreDisplay[index] -= 99999999;
             }
             else
             {
                 text.text += "Empty - 00000000\n";
             }
+        }
 
-            nameDisplay[index] = " ";
-            scoreDisplay[index] = -1;
+        for (int i = 0; i < scoreDisplay.Count; i++)
+        {
+            scoreDisplay[i] += 99999999;
         }
     }
 

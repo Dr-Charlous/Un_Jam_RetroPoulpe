@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Manager
   m_EditorClassIdentifier: 
   name:
-  - ' '
-  - ' '
-  - ' '
-  score: ffffffffffffffffffffffff
+  - test
+  - mope
+  - hat
+  - yhi
+  - po
+  score: 550000001df7c2ff220000008700000041000000
