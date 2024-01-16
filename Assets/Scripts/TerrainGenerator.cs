@@ -11,48 +11,39 @@ public class TerrainGenerator : MonoBehaviour
     int[] triangles;
 
     int PreviousXSize;
+    int PreviousYSize;
     int PreviousZSize;
     float PreviousMaxHeight;
 
-    [Range(10, 30)]
-    public int xSize;
-    [Range(1, 2)]
-    public int zSize;
-    [Range(0f, 2f)]
-    public float MaxHeight;
-
-    //private void Start()
-    //{
-    //    mesh = new Mesh();
-    //    GetComponent<MeshFilter>().mesh = mesh;
-
-    //    CreateShape();
-    //    UpdateMesh();
-
-    //    GetComponent<MeshCollider>().sharedMesh = mesh;
-    //}
+    [Range(1, 30)] public int xSize;
+    [Range(1, 30)] public int ySize;
+    [Range(1, 2)] public int zSize;
+    [Range(0f, 2f)] public float MaxHeight;
 
     private void Update()
     {
-        if (xSize != PreviousXSize || zSize != PreviousZSize || MaxHeight != PreviousMaxHeight)
+        if (xSize != PreviousXSize || ySize != PreviousYSize || zSize != PreviousZSize || MaxHeight != PreviousMaxHeight)
         {
             mesh = new Mesh();
             GetComponent<MeshFilter>().mesh = mesh;
 
             CreateShape();
-            UpdateMesh();
+            //UpdateMesh();
 
             GetComponent<MeshCollider>().sharedMesh = mesh;
 
             PreviousXSize = xSize;
+            PreviousYSize = ySize;
             PreviousZSize = zSize;
             PreviousMaxHeight = MaxHeight;
         }
     }
 
+
+
     void CreateShape()
     {
-        vertices = new Vector3[(xSize + 1) * (zSize + 1)];
+        vertices = new Vector3[(xSize + 1) * (ySize + 1) * (zSize + 1)];
 
         int i = 0;
 
@@ -60,12 +51,15 @@ public class TerrainGenerator : MonoBehaviour
         {
             for (int x = 0; x <= xSize; x++)
             {
-                //hauteur
-                //float y = Mathf.PerlinNoise(x * 0.3f,z * 0.3f) * MaxHeight;
-                float y = Mathf.Sin(x) * MaxHeight;
+                for (int y = 0; y <= ySize; y++)
+                {
+                    //hauteur
+                    //float y = Mathf.PerlinNoise(x * 0.3f,z * 0.3f) * MaxHeight;
+                    float yy = Mathf.Sin(x) * MaxHeight;
 
-                vertices[i] = new Vector3(x - (xSize / 2), y, z - (zSize / 2));
-                i++;
+                    vertices[i] = new Vector3(x - (xSize / 2), y - (ySize / 2) + yy, z - (zSize / 2));
+                    i++;
+                }
             }
         }
 
@@ -78,7 +72,7 @@ public class TerrainGenerator : MonoBehaviour
         {
             for (int x = 0; x < xSize; x++)
             {
-                triangles[tris + 0] = vert + 0;
+                triangles[tris + 0] = vert + 0; 
                 triangles[tris + 1] = vert + xSize + 1;
                 triangles[tris + 2] = vert + 1;
                 triangles[tris + 3] = vert + 1;
