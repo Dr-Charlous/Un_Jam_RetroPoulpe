@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -7,6 +8,7 @@ public class Player : MonoBehaviour
     public static int scoreValue = 0;
     public  static float speedValue = 0;
     public static float time = 0;
+    public Manager manager;
 
     public Image hungryBarFull;
     public static float hungry = 100f;
@@ -35,6 +37,11 @@ public class Player : MonoBehaviour
             LessLubricant(20);
         }
         lastTime = currentTime;
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            GameOver();
+        }
     }
 
     // Speed
@@ -81,5 +88,14 @@ public class Player : MonoBehaviour
         lubricantBarFull.fillAmount = Mathf.Clamp(dry, 0, 100);
 
         lubricantBarFull.fillAmount = lubricant / 100;
+    }
+
+    // GameOver
+
+    public void GameOver()
+    {
+        manager.score.Add(scoreValue);
+        manager.name.Add("GameOver");
+        SceneManager.LoadScene("ScoreBoardScene");
     }
 }
