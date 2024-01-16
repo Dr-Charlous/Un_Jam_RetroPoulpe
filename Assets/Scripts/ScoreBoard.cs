@@ -8,8 +8,8 @@ public class ScoreBoard : MonoBehaviour
     public int numberScoreName = 10;
     public Manager manager;
     private TextMeshProUGUI text;
-    private List<string> name = new List<string>();
-    private List<int> score = new List<int>();
+    private List<string> nameDisplay = new List<string>();
+    private List<int> scoreDisplay = new List<int>();
     private int max = 0;
     private int index;
 
@@ -18,22 +18,22 @@ public class ScoreBoard : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void refreshScoreBoard()
+    public void RefreshScoreBoard()
     {
         text = GetComponent<TextMeshProUGUI>();
 
-        name = manager.name;
-        score = manager.score;
+        nameDisplay = manager.name;
+        scoreDisplay = manager.score;
 
         text.text = "";
 
         for (int i = 0; i < numberScoreName; i++)
         {
-            findMax(score);
+            FindMax(scoreDisplay);
             if (max != -1)
             {
-                text.text += $"{name[index]} - ";
-                for (int j = 0;  j < 6-max.ToString().Length; j++)
+                text.text += $"{nameDisplay[index]} - ";
+                for (int j = 0;  j < 8-max.ToString().Length; j++)
                 {
                     text.text += "0";
                 }
@@ -41,15 +41,15 @@ public class ScoreBoard : MonoBehaviour
             }
             else
             {
-                text.text += "Empty - 000000\n";
+                text.text += "Empty - 00000000\n";
             }
 
-            name[index] = " ";
-            score[index] = -1;
+            nameDisplay[index] = " ";
+            scoreDisplay[index] = -1;
         }
     }
 
-    void findMax(List<int> list)
+    void FindMax(List<int> list)
     {
         max = -1;
         for (int i = 0; i < list.Count; i++)

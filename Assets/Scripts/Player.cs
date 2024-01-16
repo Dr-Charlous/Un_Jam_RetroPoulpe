@@ -22,8 +22,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        manager.name.Clear();
-        manager.score.Clear();
+        //manager.name.Clear();
+        //manager.score.Clear();
         StartCoroutine(CalculateSpeed());
     }
 
