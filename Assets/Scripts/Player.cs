@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        manager.name.Clear();
+        manager.score.Clear();
         StartCoroutine(CalculateSpeed());
     }
 
@@ -95,7 +97,6 @@ public class Player : MonoBehaviour
     public void GameOver()
     {
         manager.score.Add(scoreValue);
-        manager.name.Add("GameOver");
         SceneManager.LoadScene("ScoreBoardScene");
     }
 }

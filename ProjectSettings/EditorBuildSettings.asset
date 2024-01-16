@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CoquoScene.unity
     guid: c44082b2742751c4b9ef1a7979c5c22b
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoardScene.unity
+    guid: 76c5223654dc914479f1416a7bb7881c
   m_configObjects: {}

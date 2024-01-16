@@ -13,15 +13,17 @@ public class ScoreBoard : MonoBehaviour
     private int max = 0;
     private int index;
 
-    void Start()
+    private void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void refreshScoreBoard()
     {
         text = GetComponent<TextMeshProUGUI>();
 
         name = manager.name;
         score = manager.score;
-
-        name.Add("Name01");
-        score.Add(10);
 
         text.text = "";
 
@@ -58,5 +60,10 @@ public class ScoreBoard : MonoBehaviour
                 index = i;
             }
         }
+    }
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
     }
 }
