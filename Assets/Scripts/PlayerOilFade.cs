@@ -11,10 +11,7 @@ public class PlayerOilFade : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SwitchOilState(0.5f);
-        }
+       
     }
     private void Start()
     {
