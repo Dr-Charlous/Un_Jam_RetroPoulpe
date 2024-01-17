@@ -418,6 +418,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b710a50516262428bf15ed4dd0d954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1379408793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4358314266882063643, guid: 1e4483f39ef859d4e9213588cb1e110c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651775274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1446893372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -696,12 +702,17 @@ PrefabInstance:
         type: 3}
       propertyPath: CameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1379408793}
     - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
         type: 3}
       propertyPath: ControlTransform
       value: 
       objectReference: {fileID: 288247822}
+    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
+        type: 3}
+      propertyPath: ParalaxTransform
+      value: 
+      objectReference: {fileID: 1271996512}
     - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
         type: 3}
       propertyPath: ControlMeshTransform
