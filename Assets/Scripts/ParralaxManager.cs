@@ -14,9 +14,9 @@ public class ParralaxManager : MonoBehaviour
             mat.SetFloat("_PlayerSpeed", PlayerSpeed);
         }
 
-        if (Random.Range(1,100)==2)
+        if (Random.Range(1,1000)==2)
         {
-            GameObject.Instantiate(Deco[Random.Range(0, Deco.Length)], new Vector3(PlayerPosX, 10, 0), Quaternion.identity);
+            GameObject.Instantiate(Deco[Random.Range(0, Deco.Length)], new Vector3(PlayerPosX, 5, 0), Quaternion.identity);
         }
     }
 }
