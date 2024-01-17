@@ -220,9 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0bd1b45bb03744a826f8aeb3ec8951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1.5
-  yForceUp: 1
-  yForceDown: -1
+  gravityVelocity: 4
+  velocityOnGround: 0.2
+  yForceUp: 3
+  yForceDown: -8
   rotationSpeed: 10
   rigidbody: {fileID: 299134072273393220}
   CameraTransform: {fileID: 0}
