@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    [SerializeField] float valueSpeedGameOver = 0.5f;
     [SerializeField] float gravityVelocity = 1.5f;
     [SerializeField] float velocityOnGround = 0.5f;
     [SerializeField] float yForceUp = 1f;
@@ -45,7 +46,7 @@ public class PlayerMove : MonoBehaviour
 
         rigidbody.AddForce(Vector3.up * (gravityVelocity + yOffSet));
 
-        if (rigidbody.velocity.magnitude <= 0.5f)
+        if (rigidbody.velocity.magnitude <= valueSpeedGameOver)
         {
             playerStats.GameOver();
         }
