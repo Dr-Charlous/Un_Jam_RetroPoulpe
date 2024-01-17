@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 {
     public static int scoreValue = 0;
     public static float speedValue = 0;
-    public float speedValueFloat = 0;
     public float time = 0;
     public Manager manager;
 
@@ -56,7 +55,6 @@ public class Player : MonoBehaviour
             yield return new WaitForFixedUpdate();
 
             speedValue = Mathf.RoundToInt(Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime);
-            speedValueFloat = transform.position.x - prevPos.x;
         }
     }
 
