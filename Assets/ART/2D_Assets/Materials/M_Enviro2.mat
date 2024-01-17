@@ -108,7 +108,7 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 1
     - _Parallax: 0.005
-    - _PlayerSpeed: 0.03365947
+    - _PlayerSpeed: 0.000023562845
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ScrollingSpeed: 0
