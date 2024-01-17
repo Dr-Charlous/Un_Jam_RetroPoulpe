@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
         ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y, ParalaxTransform.position.z);
         ControlTransform.position = transform.position;
-        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(rigidbody.velocity.magnitude/100);
+        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(rigidbody.velocity.magnitude/100, transform.position.x);
 
         float yOffSet = 0;
 
