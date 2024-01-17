@@ -46,7 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CubeNumber: 20
   ValueBetweenCube: 0.2
-  ValueBelowCube: 3
+  ValueBelowCube: 6
+  ValueYSin: 2
+  ValueXSin: 0.3
   CubePrefab: {fileID: 6746205479899036897, guid: b0e080a472b12bb40a688d8858097415,
     type: 3}
   CubeArray: []

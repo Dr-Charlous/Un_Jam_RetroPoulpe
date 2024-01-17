@@ -5,25 +5,41 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float velocity = 1.5f;
+    [SerializeField] float yForceUp = 1f;
+    [SerializeField] float yForceDown = -1f;
     [SerializeField] float rotationSpeed = 10f;
     [SerializeField] Rigidbody rigidbody;
 
     [SerializeField] Transform CameraTransform;
     [SerializeField] Transform ControlTransform;
 
+    private void Start()
+    {
+        rigidbody.AddForce(new Vector3(1,1,0) * velocity, ForceMode.Impulse);
+    }
+
     private void Update()
     {
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
         ControlTransform.position = transform.position;
 
+        float yOffSet = 0;
+
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            rigidbody.velocity = Vector3.up * velocity;
+            yOffSet = yForceUp;
         }
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            yOffSet = yForceDown;
+        }
+
+        rigidbody.AddForce(Vector3.up * (velocity + yOffSet));
     }
 
     private void FixedUpdate()
     {
-        ControlTransform.rotation = Quaternion.Euler(0, 0, rigidbody.velocity.y * rotationSpeed);
+        //ControlTransform.rotation = Quaternion.Euler(0, 0, rigidbody.velocity.y * rotationSpeed);
     }
 }
