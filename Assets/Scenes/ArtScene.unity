@@ -577,6 +577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313018705604899009, guid: 1e4483f39ef859d4e9213588cb1e110c,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313018705604899009, guid: 1e4483f39ef859d4e9213588cb1e110c,
+        type: 3}
       propertyPath: orthographic size
       value: 9
       objectReference: {fileID: 0}
@@ -646,6 +651,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4895838461007130525, guid: 1e4483f39ef859d4e9213588cb1e110c,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139624308263593083, guid: 1e4483f39ef859d4e9213588cb1e110c,
+        type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139624308263593083, guid: 1e4483f39ef859d4e9213588cb1e110c,
         type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
@@ -722,6 +737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354489255760760488, guid: 640b4a894c5762b44a19bcbbf849f772,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
         type: 3}
