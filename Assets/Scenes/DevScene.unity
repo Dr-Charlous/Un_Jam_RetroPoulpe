@@ -615,18 +615,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2015887287}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1368735080 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1198147856532890764, guid: 69d196f5638954641a4f7905ea8d527b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1446893372}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b710a50516262428bf15ed4dd0d954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1446893372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -790,24 +778,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
         type: 3}
-      propertyPath: force
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
-      propertyPath: terrain
-      value: 
-      objectReference: {fileID: 1368735080}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
-      propertyPath: velocity
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
       propertyPath: CameraTransform
       value: 
       objectReference: {fileID: 85324586}
+    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
+        type: 3}
+      propertyPath: gravityVelocity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
         type: 3}
       propertyPath: ControlTransform
@@ -818,21 +796,6 @@ PrefabInstance:
       propertyPath: ParalaxTransform
       value: 
       objectReference: {fileID: 491030520}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
-      propertyPath: velocityOnGround
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
-      propertyPath: ControlMeshTransform
-      value: 
-      objectReference: {fileID: 288247822}
-    - target: {fileID: 8738870396143212035, guid: 640b4a894c5762b44a19bcbbf849f772,
-        type: 3}
-      propertyPath: controlMeshTransform
-      value: 
-      objectReference: {fileID: 288247822}
     m_RemovedComponents:
     - {fileID: 2253220122328258185, guid: 640b4a894c5762b44a19bcbbf849f772, type: 3}
     - {fileID: 1355174989847987534, guid: 640b4a894c5762b44a19bcbbf849f772, type: 3}

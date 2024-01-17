@@ -24,8 +24,8 @@ public class TerrainGenV2 : MonoBehaviour
 
     private void Update()
     {
-        //transform.position = new Vector3(PlayerPos.position.x - 9, transform.position.y);
-        //ChangeTerrain(transform.position.x);
+        transform.position = new Vector3(PlayerPos.position.x - 9, transform.position.y);
+        ChangeTerrain(transform.position.x);
     }
 
     void GenerateTerrain(float positionX)
