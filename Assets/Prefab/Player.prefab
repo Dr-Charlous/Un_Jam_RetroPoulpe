@@ -31,12 +31,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2329211992452522315}
   - {fileID: 2988909817790038561}
   - {fileID: 1632994204095392214}
   - {fileID: 8507578327486481508}
   - {fileID: 5782459989786018535}
   - {fileID: 1446340424924278105}
-  - {fileID: 2329211992452522315}
   m_Father: {fileID: 4716273120462476989}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -146,7 +146,7 @@ Transform:
   - {fileID: 4546009811970000096}
   - {fileID: 982931551900823429}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &4341407388686468890
 SphereCollider:
