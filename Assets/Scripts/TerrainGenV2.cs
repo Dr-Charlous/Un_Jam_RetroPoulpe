@@ -11,6 +11,7 @@ public class TerrainGenV2 : MonoBehaviour
     [SerializeField, Range(1, 5)] float ValueYSin;
     [SerializeField, Range(1, 0)] float ValueXSin;
     [SerializeField, Range(0.5f, 0)] float ValueXPerlin;
+    [SerializeField, Range(0, 5)] float ValueYPerlin;
     [Header("")]
     [SerializeField] GameObject CubePrefab;
     [SerializeField] List<GameObject> CubeArray;
@@ -64,7 +65,7 @@ public class TerrainGenV2 : MonoBehaviour
             {
                 if (CubeArray[k].GetComponent<CubeGen>().Vertices[j].y > 0 && CubeArray[k].GetComponent<CubeGen>().Vertices[j].y != Mathf.Sin(positionX + i + CubeArray[k].GetComponent<CubeGen>().Vertices[j].x) + ValueBelowCube)
                 {
-                    float y = Mathf.PerlinNoise(Mathf.Sin((positionX + i + CubeArray[k].GetComponent<CubeGen>().Vertices[j].x) * (ValueXSin + ValueXPerlin)), ValueYSin);
+                    float y = Mathf.PerlinNoise(Mathf.Sin((positionX + i + CubeArray[k].GetComponent<CubeGen>().Vertices[j].x) * (ValueXSin + ValueXPerlin)), ValueYSin + ValueYPerlin);
                     CubeArray[k].GetComponent<CubeGen>().Vertices[j].y = (Mathf.Sin((positionX + i + CubeArray[k].GetComponent<CubeGen>().Vertices[j].x) * ValueXSin) + y) * ValueYSin + ValueBelowCube;
                 }
             }
