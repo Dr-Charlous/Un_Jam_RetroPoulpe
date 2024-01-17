@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float valueSpeedGameOver = 0.5f;
+    [SerializeField] float valueForceBegin = 5f;
     [SerializeField] float gravityVelocity = 1.5f;
     [SerializeField] float velocityOnGround = 0.5f;
     [SerializeField] float yForceUp = 1f;
@@ -22,15 +23,15 @@ public class PlayerMove : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         playerStats = GetComponent<Player>();
 
-        rigidbody.AddForce(new Vector3(1,1,0) * gravityVelocity, ForceMode.Impulse);
+        rigidbody.AddForce(new Vector3(1,1,0) * valueForceBegin, ForceMode.Impulse);
     }
 
     private void Update()
     {
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
-        ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y, ParalaxTransform.position.z);
+        ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y + 1.75f, ParalaxTransform.position.z);
         ControlTransform.position = transform.position;
-        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(rigidbody.velocity.magnitude/100, transform.position.x);
+        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(playerStats.speedValueFloat/100, transform.position.x);
 
         float yOffSet = 0;
 

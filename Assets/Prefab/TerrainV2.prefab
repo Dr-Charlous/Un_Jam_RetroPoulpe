@@ -44,11 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b710a50516262428bf15ed4dd0d954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeNumber: 20
+  OffSetXTerrain: 17
+  CubeNumber: 50
   ValueBetweenCube: 0.2
-  ValueBelowCube: 6
+  ValueBelowCube: 7
   ValueYSin: 2
   ValueXSin: 0.3
+  ValueXPerlin: 0
+  ValueYPerlin: 0
   CubePrefab: {fileID: 6746205479899036897, guid: b0e080a472b12bb40a688d8858097415,
     type: 3}
   CubeArray: []

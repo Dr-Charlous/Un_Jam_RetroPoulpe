@@ -194,7 +194,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!114 &2991383805550486037
 MonoBehaviour:
@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4cd1f3a93406042842b6e84c3aa27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedValueFloat: 0
   time: 0
   manager: {fileID: 11400000, guid: ef701dfef74666e43a74771f999695d3, type: 2}
   hungryBarFull: {fileID: 4613794117588018170}
@@ -227,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueSpeedGameOver: 0.5
+  valueForceBegin: 5
   gravityVelocity: 3
   velocityOnGround: 0.2
   yForceUp: 3
@@ -1018,47 +1020,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4716273120462476989}
     m_Modifications:
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[0]
-      value: 
-      objectReference: {fileID: 541896757530575352, guid: c1739ec22878b044c84b72723d178a43,
-        type: 3}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[1]
-      value: 
-      objectReference: {fileID: 3836096121038505209, guid: 08370dba9a3a2e0458ff98796a1a13bd,
-        type: 3}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[2]
-      value: 
-      objectReference: {fileID: 579673118320650717, guid: e8b98b4d6a4d694498dd6973475bac23,
-        type: 3}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[3]
-      value: 
-      objectReference: {fileID: 4553218385478438117, guid: 3e3ba09b69cc0fb44a47df67509fdb53,
-        type: 3}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[4]
-      value: 
-      objectReference: {fileID: 4548256295216896636, guid: 0d0ef12ec022e024785d209cce7b35d2,
-        type: 3}
-    - target: {fileID: 454907908880174617, guid: 497f9f2d420b168469e4b50fe55b23a7,
-        type: 3}
-      propertyPath: Deco.Array.data[5]
-      value: 
-      objectReference: {fileID: 6662188638695009399, guid: 9edb1ad4548ce7f479793743357c0325,
-        type: 3}
     - target: {fileID: 5928873516734100790, guid: 497f9f2d420b168469e4b50fe55b23a7,
         type: 3}
       propertyPath: m_Name
