@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float valueSpeedGameOver = 0.5f;
+    [SerializeField] float BeginForce = 5;
     [SerializeField] float gravityVelocity = 1.5f;
     [SerializeField] float velocityOnGround = 0.5f;
     [SerializeField] float yForceUp = 1f;
@@ -22,7 +23,7 @@ public class PlayerMove : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         playerStats = GetComponent<Player>();
 
-        rigidbody.AddForce(new Vector3(1,1,0) * gravityVelocity, ForceMode.Impulse);
+        rigidbody.AddForce(new Vector3(1,1,0) * BeginForce, ForceMode.Impulse);
     }
 
     private void Update()
@@ -30,7 +31,17 @@ public class PlayerMove : MonoBehaviour
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
         ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y, ParalaxTransform.position.z);
         ControlTransform.position = transform.position;
-        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(rigidbody.velocity.magnitude/100, transform.position.x);
+
+        if (playerStats.speedValueFloat / 100f > 0.0015f)
+        {
+            ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(playerStats.speedValueFloat/100f, transform.position.x);
+        }
+        else
+        {
+            ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(0.0015f, transform.position.x);
+        }
+
+        Debug.Log(playerStats.speedValueFloat / 100f);
 
         float yOffSet = 0;
 
@@ -60,6 +71,6 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //ControlTransform.rotation = Quaternion.Euler(0, 0, rigidbody.velocity.y * rotationSpeed);
+        ControlTransform.rotation = Quaternion.Euler(0, 0, rigidbody.velocity.y * rotationSpeed);
     }
 }
