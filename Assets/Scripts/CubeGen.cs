@@ -33,6 +33,8 @@ public class CubeGen : MonoBehaviour
 
         CubeMesh.vertices = Vertices;
         GetComponent<MeshCollider>().sharedMesh = CubeMesh;
+        GetComponent<MeshCollider>().sharedMesh.RecalculateBounds();
+
     }
 
     void Check()

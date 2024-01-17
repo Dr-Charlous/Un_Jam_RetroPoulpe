@@ -24,8 +24,8 @@ public class TerrainGenV2 : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(PlayerPos.position.x - 9, transform.position.y);
-        ChangeTerrain(transform.position.x);
+        //transform.position = new Vector3(PlayerPos.position.x - 9, transform.position.y);
+        //ChangeTerrain(transform.position.x);
     }
 
     void GenerateTerrain(float positionX)
@@ -50,6 +50,7 @@ public class TerrainGenV2 : MonoBehaviour
                     obj.GetComponent<CubeGen>().Vertices[j].y = Mathf.Sin(positionX + i + obj.GetComponent<CubeGen>().Vertices[j].x) + obj.GetComponent<CubeGen>().Vertices[j].y + ValueBelowCube;
                 }
             }
+
 
             CubeArray.Add(obj);
         }

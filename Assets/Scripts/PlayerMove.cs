@@ -22,6 +22,8 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
+        return;
+
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
         ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y, ParalaxTransform.position.z);
         ControlTransform.position = transform.position;
