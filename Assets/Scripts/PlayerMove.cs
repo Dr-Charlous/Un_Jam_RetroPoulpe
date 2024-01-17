@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] float velocity = 1.5f;
+    [SerializeField] float gravityVelocity = 1.5f;
+    [SerializeField] float velocityOnGround = 0.5f;
     [SerializeField] float yForceUp = 1f;
     [SerializeField] float yForceDown = -1f;
     [SerializeField] float rotationSpeed = 10f;
@@ -16,7 +17,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
-        rigidbody.AddForce(new Vector3(1,1,0) * velocity, ForceMode.Impulse);
+        rigidbody.AddForce(new Vector3(1,1,0) * gravityVelocity, ForceMode.Impulse);
     }
 
     private void Update()
@@ -38,7 +39,12 @@ public class PlayerMove : MonoBehaviour
             yOffSet = yForceDown;
         }
 
-        rigidbody.AddForce(Vector3.up * (velocity + yOffSet));
+        rigidbody.AddForce(Vector3.up * (gravityVelocity + yOffSet));
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        rigidbody.AddForce(rigidbody.velocity * velocityOnGround, ForceMode.Force);
     }
 
     private void FixedUpdate()
