@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] Transform CameraTransform;
     [SerializeField] Transform ControlTransform;
+    [SerializeField] Transform ParalaxTransform;
 
     private void Start()
     {
@@ -21,7 +22,9 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         CameraTransform.position = new Vector3(transform.position.x, transform.position.y, CameraTransform.position.z);
+        ParalaxTransform.position = new Vector3(transform.position.x, transform.position.y, ParalaxTransform.position.z);
         ControlTransform.position = transform.position;
+        ParalaxTransform.GetComponent<ParralaxManager>().UpdateParallax(rigidbody.velocity.magnitude/100);
 
         float yOffSet = 0;
 

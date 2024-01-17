@@ -6,7 +6,7 @@ public class ParralaxManager : MonoBehaviour
 {
     public Material[] Materials;
     // Start is called before the first frame update
-    void UpdateParallax(float PlayerSpeed)
+    public void UpdateParallax(float PlayerSpeed)
     {
         foreach (Material mat in Materials)
         {
