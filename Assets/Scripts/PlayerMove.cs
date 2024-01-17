@@ -9,14 +9,18 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float yForceUp = 1f;
     [SerializeField] float yForceDown = -1f;
     [SerializeField] float rotationSpeed = 10f;
-    [SerializeField] Rigidbody rigidbody;
+    Rigidbody rigidbody;
 
     [SerializeField] Transform CameraTransform;
     [SerializeField] Transform ControlTransform;
     [SerializeField] Transform ParalaxTransform;
+    Player playerStats;
 
     private void Start()
     {
+        rigidbody = GetComponent<Rigidbody>();
+        playerStats = GetComponent<Player>();
+
         rigidbody.AddForce(new Vector3(1,1,0) * gravityVelocity, ForceMode.Impulse);
     }
 
@@ -40,11 +44,17 @@ public class PlayerMove : MonoBehaviour
         }
 
         rigidbody.AddForce(Vector3.up * (gravityVelocity + yOffSet));
+
+        if (rigidbody.velocity.magnitude <= 0.5f)
+        {
+            playerStats.GameOver();
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        rigidbody.AddForce(rigidbody.velocity * velocityOnGround, ForceMode.Force);
+        if (!other.GetComponent<Food>() && !other.GetComponent<Drink>() && playerStats.lubricant / 100 > 0)
+            rigidbody.AddForce(rigidbody.velocity * velocityOnGround, ForceMode.Force);
     }
 
     private void FixedUpdate()

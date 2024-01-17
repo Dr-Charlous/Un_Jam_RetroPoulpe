@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TerrainGenV2 : MonoBehaviour
 {
+    [SerializeField] int OffSetXTerrain;
     [SerializeField] int CubeNumber;
     [SerializeField] float ValueBetweenCube;
     [SerializeField] float ValueBelowCube;
@@ -24,7 +25,7 @@ public class TerrainGenV2 : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(PlayerPos.position.x - 9, transform.position.y);
+        transform.position = new Vector3(PlayerPos.position.x - OffSetXTerrain, transform.position.y);
         ChangeTerrain(transform.position.x);
     }
 

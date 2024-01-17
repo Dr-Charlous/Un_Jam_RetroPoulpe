@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0bd1b45bb03744a826f8aeb3ec8951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityVelocity: 4
+  gravityVelocity: 3
   velocityOnGround: 0.2
   yForceUp: 3
   yForceDown: -8

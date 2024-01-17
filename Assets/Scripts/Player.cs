@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public static int scoreValue = 0;
-    public  static float speedValue = 0;
-    public static float time = 0;
+    public static float speedValue = 0;
+    public float time = 0;
     public Manager manager;
 
     public Image hungryBarFull;
-    public static float hungry = 100f;
+    public float hungry = 100f;
 
     public Image lubricantBarFull;
-    public static float lubricant = 100f;
+    public float lubricant = 100f;
 
     private int lastTime = 0;
     private int currentTime = 0;
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         }
         lastTime = currentTime;
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) || (hungry <= 0 && lubricant <= 0))
         {
             GameOver();
         }
