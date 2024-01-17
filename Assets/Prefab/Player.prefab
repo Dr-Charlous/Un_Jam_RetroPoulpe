@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4cd1f3a93406042842b6e84c3aa27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 11400000, guid: ef701dfef74666e43a74771f999695d3, type: 2}
   hungryBarFull: {fileID: 4613794117588018170}
   lubricantBarFull: {fileID: 6967761826027102191}
 --- !u!114 &8738870396143212035
@@ -219,13 +219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0bd1b45bb03744a826f8aeb3ec8951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 5
+  gravityVelocity: 3
+  velocityOnGround: 0.5
   yForceUp: 1
   yForceDown: -1
   rotationSpeed: 10
   rigidbody: {fileID: 299134072273393220}
   CameraTransform: {fileID: 0}
   ControlTransform: {fileID: 0}
+  ParalaxTransform: {fileID: 0}
 --- !u!1 &2398699456824654209
 GameObject:
   m_ObjectHideFlags: 0
